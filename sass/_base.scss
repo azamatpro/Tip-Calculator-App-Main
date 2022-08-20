@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%; // 62.5% === 10px
+
+  @media (max-width: 600px) {
+    font-size: 50%;
+  }
+  @media (max-width: 360px) {
+    font-size: 45%;
+  }
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  background-color: var(--Light-grayish-cyan);
+}
+.container {
+  display: grid;
+  justify-content: center;
+  margin-top: 10rem;
+  
+  @media (max-width: 750px) {
+    margin-top: 4rem;
+  }
+}
+.logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.restrict {
+  color: var(--color-restrict) !important;
+}
+.hidden {
+  display: none;
+}
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  background-color: var(--White);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;  
+    row-gap: 3rem;
+  }
+}

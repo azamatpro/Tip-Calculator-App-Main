@@ -1,0 +1,133 @@
+.calculation {
+  border-radius: 0.5rem;
+  &__input-text {
+    font-family: "Space Mono", monospace;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Dark-grayish-cyan);
+    padding-bottom: 0.8rem;
+  }
+  &__input {
+    width: 100%;
+    border: none;
+    background-color: var(--input-back);
+    outline: none;
+    text-align: right;
+    padding: 0.3rem 0;
+    font-family: "Space Mono", monospace;
+    padding-right: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    color: rgba(0, 71, 75, 1);
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    transition: all 0.2s;
+  }
+  &__input:focus,
+  &__input:hover {
+    border: 2px solid var(--input-border);
+  }
+  &__icon {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    height: 1.4rem;
+    z-index: 10;
+  }
+  &__btns {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 32.4%);
+  }
+  &__btn {
+    border-radius: 0.5rem;
+    font-family: "Space Mono", monospace;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    transition: all 0.2s;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+  }
+  &__btn-bg {
+    color: var(--White);
+    background-color: var(--tip-btn-back);
+  }
+  &__btn-bg:focus,
+  &__btn-bg:hover {
+    background-color: rgba(159, 232, 223, 1);
+    color: var(--tip-btn-hover-color);
+  }
+}
+.custom {
+  background-color: var(--input-back);
+  color: var(--tip-btn-hover-color);
+  border: 2px solid transparent;
+}
+.custom:focus,
+.custom:hover {
+  border: 2px solid var(--input-border);
+}
+.display {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  padding: 3rem;
+
+  &__text-main {
+    color: var(--White);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    font-family: "Space Mono", monospace;
+  }
+  &__text-sub {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    font-weight: 600;
+    color: rgba(127, 157, 159, 1);
+    font-family: "Space Mono", monospace;
+  }
+
+  &__value {
+    color: rgba(38, 194, 174, 1);
+    font-family: "Space Mono", monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 7rem;
+  }
+
+  &__btn {
+    align-self: flex-end;
+    background-color: rgba(38, 194, 174, 1);
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--Very-dark-cyan);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    background-color: rgba(159, 232, 223, 1);
+  }
+}
+.tip-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-reset {
+}
+.btn-calc {
+}

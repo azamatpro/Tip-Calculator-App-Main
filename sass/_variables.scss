@@ -1,0 +1,43 @@
+//  Colors
+
+:root{
+  //  Primary
+ --Strong-cyan: rgb(38, 192, 171);
+ 
+  
+  // Neutral
+ --Very-dark-cyan: rgb(0, 73, 77);
+ --tip-btn-hover-color:rgba(0, 71, 75, 1);
+ --Dark-grayish-cyan: rgb(94, 122, 125);
+ --Dark-grayish-cyan2: rgb(127, 156, 159);
+ --Light-grayish-cyan: rgb(197, 228, 231);
+ --Light-grayish-cyan2: rgb(244, 250, 250);
+ --input-back:rgba(243, 249, 250, 1);
+ --input-border:rgba(38, 194, 174, 1);
+ --White: rgb(255, 255, 255);
+ --tip-btn-back:rgba(0, 71, 75, 1);
+ --custom-text-color: rgba(84, 120, 120, 1);
+
+ --color-restrict:rgba(225, 116, 87, 1);
+}
+
+// Typography
+$font-family-main: "Space Mono", monospace;
+
+
+// Utilities
+.margin-top-2{
+  margin-top: 2rem;
+}
+.margin-top-3{
+  margin-top: 3rem;
+}
+.margin-top-4{
+  margin-top: 4rem;
+}
+.margin-top-6{
+  margin-top: 6rem;
+}
+.margin-top-8{
+  margin-top: 8rem;
+}

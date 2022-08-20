@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Heading 1 -->
+      <div class="logo-box">
+        <img src="/images/logo.svg" alt="Calculator logo" />
+      </div>
+      <!-- Main calculator app -->
+      <div class="calculator">
+        <!-- Calculator btns set -->
+        <section class="calculation">
+          <!-- calculating bills -->
+          <p class="calculation__input-text">Bill</p>
+          <div style="position: relative">
+            <input type="text" class="calculation__input bill-input" maxlength="12" />
+            <img
+              src="/images/icon-dollar.svg"
+              alt="Bill Icon"
+              class="calculation__icon"
+            />
+          </div>
+
+          <!-- calculating tips -->
+          <p class="calculation__input-text margin-top-3">Select Tip %</p>
+          <div class="calculation__btns">
+            <button class="calculation__btn calculation__btn-bg tip-btn">
+              5%
+            </button>
+            <button class="calculation__btn calculation__btn-bg tip-btn">
+              10%
+            </button>
+            <button class="calculation__btn calculation__btn-bg tip-btn">
+              15%
+            </button>
+            <button class="calculation__btn calculation__btn-bg tip-btn">
+              25%
+            </button>
+            <button class="calculation__btn calculation__btn-bg tip-btn">
+              50%
+            </button>
+            <input type="text" class="calculation__btn custom" placeholder="Custom" maxlength="3"/>
+          </div>
+
+          <!-- calculating number of people -->
+          <div style="display:flex; justify-content: space-between;">
+            <p class="calculation__input-text margin-top-3">Number of people</p>
+            <p  class="calculation__input-text margin-top-3 hidden restrict">Can't be zero</p>
+          </div>
+
+          <div style="position: relative">
+            <input type="text" class="calculation__input person-input" maxlength="12" />
+            <img
+              src="/images/icon-person.svg"
+              alt="Person Icon"
+              class="calculation__icon"
+            />
+          </div>
+        </section>
+        <!-- calculator screen-->
+        <section class="display">
+          <div class="tip-amount">
+            <div class="display__text">
+              <p class="display__text-main">Tip Amount</p>
+              <p class="display__text-sub">/ person</p>
+            </div>
+            <div class="display__value tip-value">$0</div>
+          </div>
+
+          <div class="tip-amount">
+            <div>
+              <p class="display__text-main">total</p>
+              <p class="display__text-sub">/ person</p>
+            </div>
+            <div class="display__value total-value">$0</div>
+          </div>
+          <button class="display__btn btn-reset hidden">Reset</button>
+          <button class="display__btn btn-calc">Calculate</button>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
