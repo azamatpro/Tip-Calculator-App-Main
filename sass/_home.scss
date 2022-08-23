@@ -121,11 +121,11 @@
   &__btn:focus {
     background-color: rgba(159, 232, 223, 1);
   }
-}
-.tip-amount {
+  &__tip-amount {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 }
 .btn-reset {
 }
