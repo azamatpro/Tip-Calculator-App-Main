@@ -152,8 +152,7 @@ body {
     cursor: pointer; }
   .display__btn:hover, .display__btn:focus {
     background-color: #9fe8df; }
-
-.tip-amount {
+.display__tip-amount {
   display: flex;
   justify-content: space-between;
   align-items: center; }
