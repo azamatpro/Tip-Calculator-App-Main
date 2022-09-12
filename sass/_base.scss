@@ -24,7 +24,8 @@ body {
 .container {
   display: grid;
   justify-content: center;
-  margin-top: 10rem;
+  height:100vh;
+//   margin-top: 10rem;
   
   @media (max-width: 750px) {
     margin-top: 4rem;
