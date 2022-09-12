@@ -23,16 +23,11 @@ body {
   display: grid;
   justify-content: center;
   align-items:center;
-  height:100vh;
-/*   margin-top: 10rem; */
+  height:90vh;
 }
-  @media (max-width: 750px) {
-    .container {
-      margin-top: 4rem; } }
-
 .logo-box {
   text-align: center;
-  margin-bottom: 4rem; }
+}
 
 .restrict {
   color: var(--color-restrict) !important; }
